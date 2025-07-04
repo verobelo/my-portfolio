@@ -1,14 +1,11 @@
 import Linkedin from '../svg/Linkedin';
 import Github from '../svg/GitHub';
 import Gmail from '../svg/Gmail';
-import { useState } from 'react';
-import { CopyCheck } from 'lucide-react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { translations } from './logic/translations';
 
 export default function Contact({ language }) {
-  const [isCopied, setIsCopied] = useState(false);
   const translation = translations[language].contact;
 
   const notify = () => {
@@ -18,7 +15,6 @@ export default function Contact({ language }) {
   function copyToClipboard() {
     const email = 'v.belozerova.dev@gmail.com';
     navigator.clipboard.writeText(email);
-    setIsCopied(true);
     notify();
   }
 
@@ -41,15 +37,10 @@ export default function Contact({ language }) {
             type='button'
             aria-label='Copy email address'
             onClick={copyToClipboard}
-            className='flex items-center'
-            disabled={isCopied}>
-            {isCopied ? (
-              <CopyCheck color='#bbbaa6' size={28} />
-            ) : (
-              <div className='hover:scale-130 transition hover:cursor-pointer duration-200'>
-                <Gmail />
-              </div>
-            )}
+            className='flex items-center'>
+            <div className='hover:scale-130 transition hover:cursor-pointer duration-200'>
+              <Gmail />
+            </div>
           </button>
         </li>
         <li>
