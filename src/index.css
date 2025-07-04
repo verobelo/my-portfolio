@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('../public/HelveticaNeue-Roman.woff2') format('woff2'),
-    url('../public/HelveticaNeue-Roman.woff') format('woff');
+  src: url('/HelveticaNeue-Roman.woff2') format('woff2'),
+    url('/HelveticaNeue-Roman.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -13,7 +13,7 @@
   font-family: 'BARO Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('BARO Regular'), url('../public/Baro-K7zy7.woff') format('woff');
+  src: local('BARO Regular'), url('/Baro-K7zy7.woff') format('woff');
 }
 
 body {
