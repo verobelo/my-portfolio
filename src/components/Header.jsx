@@ -32,7 +32,7 @@ export default function Header({ language, setLanguage }) {
         <button
           className='p-1 lg:pl-0 lg:mb-[-2rem] sm:text-xl cursor-pointer'
           onClick={handleToggleLanguage}>
-          {language === 'en' ? '🇪🇸' : '🇬🇧'}
+          {language === 'en' ? 'ESP' : 'ENG'}
         </button>
         <button
           type='button'
