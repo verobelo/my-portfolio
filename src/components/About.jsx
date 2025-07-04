@@ -14,7 +14,7 @@ export default function About({ language }) {
           <span className='relative'>{translation.title}</span>
         </span>
       </h2>
-      <ul className='text-base flex flex-col gap-4 sm:text-lg leading-relaxed 2xl:items-center 2xl:border-l-4 2xl:border-gradient 2xl:pl-10'>
+      <ul className='text-base flex flex-col gap-4 sm:text-lg leading-relaxed 2xl:items-center'>
         <li className='flex gap-3'>
           <span data-aos='fade-right' aria-hidden='true'>
             <CheckCheck color='#0ae448' size={24} />
