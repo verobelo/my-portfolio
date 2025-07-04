@@ -8,7 +8,7 @@ export default function HeroSection({ language }) {
       aria-label='Hero'
       className='flex flex-col items-center md:items-start 2xl:items-center justify-center sm:flex-row gap-4 lg:justify-evenly pt-4 lg:pt-0 sm:mt-2 lg:mt-0'>
       <div className='rounded-full overflow-hidden w-40 h-40 2xl:w-50 2xl:h-50 shrink-0 md:self-start'>
-        <img src='test.png' alt='profile image' loading='lazy' />
+        <img src='test-image (copy).png' alt='profile image' loading='lazy' />
       </div>
       <div className='flex flex-col items-center gap-2 flex-1 min-w-0'>
         <h1 className='text-3xl xsm:text-4xl xl:text-5xl text-center leading-snug'>
