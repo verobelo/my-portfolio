@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('HelveticaNeue-Roman.woff2') format('woff2'),
+    url('HelveticaNeue-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BARO Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('BARO Regular'), url('Baro-K7zy7.woff') format('woff');
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #222523;
+
+}
+
+@theme {
+  --color-background: #222523;
+  --color-text: #bbbaa6;
+  --color-accent: #0ae448;
+  --color-highlight: #fffce1;
+  --color-detail: #3b3b44;
+  --color-footer: #7c7c6f;
+  --color-gradient: rgba(10, 228, 72, 0.07);
+  --font-display: "BARO Regular", "sans-serif";
+  --font-general: "Helvetica Neue", "sans-serif";
+  --breakpoint-xxs: 23.4375rem;
+  --breakpoint-xsm: 25rem;
+
+
+  @keyframes brushReveal {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+}
+
+[data-aos="brush-reveal"] {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+
+  &.aos-animate {
+    opacity: 1;
+    animation: brushReveal 0.3s ease-out forwards;
+  }
+}
+
+@layer components {
+  .skill {
+    background-color: var(--color-detail);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--spacing) * 1) calc(var(--spacing) * 3) 0 calc(var(--spacing) * 3);
+    font-weight: 500;
+    border-radius: calc(infinity * 1px);
+    line-height: calc(var(--spacing) * 5);
+  }
+}
