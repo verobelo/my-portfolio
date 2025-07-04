@@ -21,7 +21,7 @@ export default function Header({ language, setLanguage }) {
 
   return (
     <header className='relative flex items-center justify-between lg:flex lg:flex-col lg:items-start lg:h-screen lg:justify-start lg:gap-10 '>
-      <div className='flex items-center gap-1 xl:gap-3 lg:w-full lg:-ml-1 xl:-ml-2'>
+      <div className='flex items-center gap-1 xl:gap-3 lg:w-full lg:pr-6 xl:pr-0 xl:-ml-2'>
         <Code color='#0ae448' aria-label='logo' className='-mt-[4px]' />
         <p className='uppercase font-semibold font-display text-xs xxs:text-base xsm:text-lg xl:text-2xl'>
           <span className='text-accent'>Vero</span>nika{' '}
