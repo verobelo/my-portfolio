@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Main from './components/Main';
-import { ToastContainer, Slide } from 'react-toastify';
+import { ToastContainer, Bounce } from 'react-toastify';
 import ScrollToTop from 'react-scroll-to-top';
 import Footer from './components/Footer';
 import AOS from 'aos';
@@ -92,9 +92,10 @@ function App() {
           <Footer language={language} />
 
           <ToastContainer
+            position='top-right'
             autoClose={2000}
             hideProgressBar
-            transition={Slide}
+            transition={Bounce}
             icon={false}
             toastClassName={() =>
               'bg-accent font-general w-full lg:w-[260px] p-1 lg:p-3 text-center text-lg'
