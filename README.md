@@ -1,6 +1,6 @@
 # 🌐 Portfolio Website
 
-**[🔗 Live Site]()**  
+**[🔗 Live Site](https://www.veronikacodes.com/)**  
 A personal portfolio showcasing my work as a Frontend Developer.
 
 ---
