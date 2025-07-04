@@ -30,7 +30,7 @@ export default function Header({ language, setLanguage }) {
       </div>
       <div className='flex gap-2'>
         <button
-          className='p-1 lg:pl-0 lg:mb-[-2rem] cursor-pointer uppercase tracking-wide text-sm font-medium rounded-md border border-accent text-accent hover:bg-accent/10 transition-colors duration-200'
+          className='p-1 lg:mb-[-2rem] cursor-pointer uppercase tracking-wide text-xs sm:text-sm font-medium rounded-md border border-accent text-accent hover:bg-accent/10 transition-colors duration-200'
           onClick={handleToggleLanguage}>
           {language === 'en' ? 'Esp' : 'Eng'}
         </button>
