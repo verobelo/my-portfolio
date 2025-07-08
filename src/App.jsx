@@ -67,16 +67,18 @@ function App() {
         lg:flex-col 
         lg:py-10 
         lg:border-r 
-        lg:border-dashed 
-        lg:border-highlight 
+        lg:border-solid 
+        lg:border-accent
         lg:sticky 
         lg:top-0 
-        lg:max-h-screen'>
+        lg:max-h-screen
+        xl:pb-15
+        '>
           <Header language={language} setLanguage={setLanguage} />
           <Contact language={language} />
         </aside>
 
-        <div className='lg:pt-6 lg:pb-0 lg:pl-6 lg:pr-3 xl:pt-10 xl:px-20 2xl:px-28'>
+        <div className='lg:pt-6 lg:pb-0 lg:pl-6 lg:pr-3 xl:pt-10 xl:px-20 2xl:px-28 xl:border-l  xl:border-accent'>
           <Main>
             <div className='lg:hidden'>
               <Header language={language} setLanguage={setLanguage} />
