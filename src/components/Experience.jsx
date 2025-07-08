@@ -25,7 +25,7 @@ export default function Experience({ language }) {
             </h3>
             <p className='text-base sm:text-lg mt-1 leading-relaxed sm:leading-normal'>
               {translation.jobOne.intro1}{' '}
-              <a href='#projects' className='font-semibold'>
+              <a href='#projects' className='font-semibold hover:text-accent'>
                 {translation.jobOne.link1}
               </a>
               {translation.jobOne.intro2}
@@ -72,6 +72,7 @@ export default function Experience({ language }) {
               {translation.jobTwo.title}
               <a
                 href='https://www.linkedin.com/company/pineapple-practice/about/'
+                className='hover:text-accent'
                 target='_blank'
                 rel='noopener noreferrer'>
                 Pineapple Practice
