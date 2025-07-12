@@ -4,10 +4,7 @@ export default function Footer({ language }) {
   return (
     <footer className='p-4' role='contentinfo'>
       <small className='text-center text-xs md:text-sm flex flex-col gap-2 text-footer border-t-1 border-footer'>
-        <p className='pt-3'>
-          &copy; {new Date().getFullYear()} Veronika Belozerova
-        </p>
-        <p className='xsm:text-center'>
+        <p className='xsm:text-center pt-3'>
           {translation.intro1} <span className='font-semibold'>Vite</span>,
           <span className='font-semibold'> React JS</span> {translation.intro2}
           <span className='font-semibold'> Tailwind CSS </span>
